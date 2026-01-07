@@ -5,21 +5,21 @@ The Complaint Management System needs to support multiple user roles (consumer, 
 
 ## Decision drivers
 
-* Simple architecture that is quick to implement
+1) Simple architecture that is quick to implement
 
-* Low maintenance (no server management)
+2) Low maintenance (no server management)
 
-* Works well with real-time updates
+3) Works well with real-time updates
 
-* Suitable for coursework scope and timeframe
+4) Suitable for coursework scope and timeframe
 
 ## Considered options
 
-* Traditional 3-tier architecture: React frontend + Node/Express backend + database
+1) Traditional 3-tier architecture: React frontend + Node/Express backend + database
 
-* Serverless architecture: React frontend + Firebase services (Auth + Firestore)
+2) Serverless architecture: React frontend + Firebase services (Auth + Firestore)
 
-* Hybrid: React frontend + Firebase + optional API using Cloud Functions (future)
+3) Hybrid: React frontend + Firebase + optional API using Cloud Functions (future)
 
 ## Decision outcome
 A serverless architecture was chosen using React (Vite) for the frontend and Firebase (Auth + Firestore) for backend services. Cloud Functions can be treated as an API layer in the design, but the core prototype works using Firebase SDK.
